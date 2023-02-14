@@ -1,0 +1,41 @@
+.menu {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+
+            h1 {
+                font-size: 20px;
+                color: #555;
+            }
+
+            .post {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                img {
+                    width: 100%;
+                    height: 200px;
+                    object-fit: cover;
+                }
+
+                button {
+                    width: max-content;
+                    padding: 7.5px 15px;
+                    border: none;
+                    border-radius: 10px;
+                    border: 1px solid black;
+                    color: black;
+                    background-color: #fff;
+                    cursor: pointer;
+
+                    &:hover {
+                        border: 1px solid #CEFE00;
+                        background-color: #CEFE00;
+                        color: black;
+                    }
+                }
+
+            }
+        }
