@@ -14,8 +14,22 @@ return new class extends Migration
     public function up()
     {
         Schema::create('posts', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
+            $table->string('title');
+            $table->text('content');
+            $table->text('img');
             $table->timestamps();
+        });
+
+        Schema::create('comments', function (Blueprint $table) {
+            $table->increments('id');
+            $table->unsignedInteger('comment-id');
+            $table->text('content');
+            $table->timestamps();
+            $table->foreign('comment-id')
+                ->references('id')
+                ->on('posts')
+                ->onDelete('cascade');
         });
     }
 
