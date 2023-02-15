@@ -21,17 +21,17 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/posts', [PostController::class, 'index']);
-Route::get('/posts/{id}', [PostController::class, 'single']);
+// Route::get('/posts/{id}', [PostController::class, 'single']);
 
 Route::post('/posts', [PostController::class, 'store']);
 
-Route::delete('/posts/{post}', function(Post $post) {
-    $success = $post->delete();
+// Route::delete('/posts/{post}', function(Post $post) {
+//     $success = $post->delete();
 
-    return [
-        'success' => $success
-    ];
-});
+//     return [
+//         'success' => $success
+//     ];
+// });
 
 
 

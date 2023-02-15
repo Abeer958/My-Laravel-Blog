@@ -1,14 +1,12 @@
 import React from 'react'
 import { useEffect } from 'react'
 import { useState } from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import axios from 'axios'
 import './home.scss'
-import Single from './Single'
 
 const Home = () => {
   const [posts, setPosts] = useState([])
-
   useEffect(() => {
     const fetchData = async () => {
       try {
