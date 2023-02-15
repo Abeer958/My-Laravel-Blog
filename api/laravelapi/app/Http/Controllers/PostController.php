@@ -24,4 +24,8 @@ class PostController extends Controller
             'img' => request('img'),
         ]);
     }
+    public function single()
+    {
+        return Post::first();
+    }
 }

@@ -16,7 +16,6 @@ class CommentController extends Controller
             'comment-id' => 'required',
             'content' => 'required'
         ]);
-
         return Comment::create([
             'comment-id' => request('comment-id'),
             'content' => request('content'),

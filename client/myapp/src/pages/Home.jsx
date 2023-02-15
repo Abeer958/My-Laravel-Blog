@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import axios from 'axios'
 import './home.scss'
+import Single from './Single'
 
 const Home = () => {
   const [posts, setPosts] = useState([])
@@ -67,10 +68,7 @@ const Home = () => {
                 <h1>{post.title}</h1>
               </Link>
               <p>{post.content}</p>
-              <Link
-                className="link"
-                to={`http://127.0.0.1:8000/api/posts/${post.id}`}
-              >
+              <Link className="link" to="/post/1">
                 <button>Read More</button>
               </Link>
             </div>

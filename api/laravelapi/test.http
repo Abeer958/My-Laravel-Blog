@@ -6,10 +6,15 @@ POST http://127.0.0.1:8000/api/posts
 Content-Type: application/json
 
 {
-    "title": "Third Post",
-    "content": "This is my third post",
-    "img": "https://images.pexels.com/photos/3199036/pexels-photo-3199036.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "img": "https://images.pexels.com/photos/2078126/pexels-photo-2078126.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
 }
+
+###
+
+DELETE http://127.0.0.1:8000/api/posts/5
+
 
 ###
 
@@ -18,7 +23,7 @@ PUT http://127.0.0.1:8000/api/posts/3
 Content-Type: application/json
 
 {
-    "title": "Third Post - updated",
+    "title": "not Third Post - updated",
     "content": "This is my third post",
     "img": "https://images.pexels.com/photos/3199036/pexels-photo-3199036.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
 }
